@@ -1,0 +1,28 @@
+﻿<Window x:Class="iniciar_secion.listar_requisitos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iniciar_secion"
+        mc:Ignorable="d"
+        Title="listar_requisitos" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" x:Name="data_final" Height="117" Margin="52,234,0,0" VerticalAlignment="Top" Width="687"/>
+        <Label Content="tipo de requirimiento" HorizontalAlignment="Left" Margin="84,86,0,0" VerticalAlignment="Top"/>
+        <Label Content="prioridad" HorizontalAlignment="Left" Margin="144,134,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="comboX_requerimiento"  Margin="250,83,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboX_requerimiento_SelectionChanged">
+            <ComboBoxItem>base de datos</ComboBoxItem>
+            <ComboBoxItem>diseño</ComboBoxItem>
+            <ComboBoxItem>programacion</ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" x:Name="comBO_prioridad" Margin="249,136,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comBO_prioridad_SelectionChanged">
+            <ComboBoxItem>alta</ComboBoxItem>
+            <ComboBoxItem>media</ComboBoxItem>
+            <ComboBoxItem>baja</ComboBoxItem>
+        </ComboBox>
+        <CheckBox Content="pendiente" x:Name="che_pendiente" HorizontalAlignment="Left" Margin="187,192,0,0" VerticalAlignment="Top" Checked="fin"/>
+        <CheckBox Content="Resuelto" HorizontalAlignment="Left" x:Name="che_resulato" Margin="446,198,0,0" VerticalAlignment="Top" Checked="fin"/>
+        <Button Content="buscar" HorizontalAlignment="Left" Margin="609,173,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>
